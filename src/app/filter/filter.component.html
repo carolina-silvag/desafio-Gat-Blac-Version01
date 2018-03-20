@@ -1,0 +1,63 @@
+<div class="btn-group-vertical filter">
+  <div class="row filter">
+    <div class="col-md-12 fondo2 text-center">
+      <p>Selecciona</p>
+      <ngb-accordion activeIds="config-panel-one" class="filter">
+        <ngb-panel title="Divisas" id="config-panel-one">
+          <ng-template ngbPanelContent class="filter2">
+            <app-filter-fecha></app-filter-fecha>
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Fecha">
+          <ng-template ngbPanelContent class="filter2">
+            <app-filter-divisas (onAdd)="onAdd($event)"></app-filter-divisas>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+      <button type="button" (click)= "onGenerarGrafico()" class="btn btn-primary text-center">Generar Grafico</button> 
+    </div>
+  </div> 
+</div>
+
+<!-- <div class="btn-group-vertical filter">
+  <div class="row filter">
+    <div class="col-md-12 fondo2 text-center">
+      <p>Selecciona</p>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-form-field>
+            <input matInput placeholder="First name">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Age">
+          </mat-form-field>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <button type="button" (click)= "onGenerarGrafico()" class="btn btn-primary text-center">Generar Grafico</button> 
+    </div>
+  </div> 
+</div> -->
+
+<!--  <button type="submit" class="btn btn-primary">Generar Grafico</button> -->
