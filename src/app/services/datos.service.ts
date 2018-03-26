@@ -11,7 +11,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class DatosService {
   fecha: Observable<Fecha>;
-  url = `http://localhost:3000`
+  url = ``
   constructor(
     public http: HttpClient
   ){}

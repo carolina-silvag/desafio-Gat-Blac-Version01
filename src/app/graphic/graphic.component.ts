@@ -83,7 +83,7 @@ export class GraphicComponent implements OnInit {
             text: 'Expresado en pesos'
         },
         subtitle: {
-            text: `Fecha: ${this.fechaData} - ${this.fechaData}`
+           
         },
         xAxis: {
             type: 'datetime',
@@ -108,7 +108,6 @@ export class GraphicComponent implements OnInit {
                     y = this.y,
                     divisa = this.point.series.name,
                 series = this.series,
-                each = Highcharts.each,
                 date = new Date(x),
                 anterior = null,
                 diff = null;
@@ -119,12 +118,13 @@ export class GraphicComponent implements OnInit {
                 let month =  MONTH_NAMES[date.getUTCMonth()];
                 let year = date.getUTCFullYear();
                 
-                each(series.data, function(p, i){
-                  if(p.x === x && series.data[i-1]) {
-                      anterior = series.data[i-1].y;
+                for(var key in series.data) {
+                  let keyNumber = parseInt(key);
+                  if(series.data[keyNumber].x === x && series.data[keyNumber - 1]) {
+                      anterior = series.data[keyNumber - 1].y;
                       diff = (y - anterior);
                   }
-                });
+                }
 
                 return "Divisa :" + divisa + "<br>" + day + "-" + month + "-" + year + ": " + y + "<br>diferencia: " + diff;
               }
