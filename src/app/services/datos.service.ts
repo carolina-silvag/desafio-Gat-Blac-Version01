@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Fecha } from "./../fecha";
+import { IEmployee } from "./../employee";
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
@@ -20,13 +21,13 @@ export class DatosService {
     /*this.getProductos();*/
   }
 
-  getProductosDivisas(fechaDesde) {
-    return this.http.get(this.url + '/divisas?fecha='+fechaDesde).map(res => res);
+  getProductosDivisas(fechaDesde): Observable<IEmployee>  {
+    return this.http.get<IEmployee>(this.url + '/divisas?fecha='+fechaDesde).map(res => res);
 
   }
 
-  getProductosMasDivisas(fechaDesde) {
-    return this.http.get(this.url + '/masdivisas?fecha='+fechaDesde).map(res => res);
+  getProductosMasDivisas(fechaDesde): Observable<IEmployee>{
+    return this.http.get<IEmployee>(this.url + '/masdivisas?fecha='+fechaDesde).map(res => res);
   }
 
 

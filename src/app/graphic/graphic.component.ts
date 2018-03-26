@@ -20,6 +20,7 @@ export class GraphicComponent implements OnInit {
   max = 0;
   hayData = false;
   newData = new Data();
+  dataOrdenado = []
 
   @Input() divisa : string;
   @Input() fechaData: Fecha;
@@ -29,6 +30,7 @@ export class GraphicComponent implements OnInit {
   chart: Highcharts.ChartObject;
 
   constructor(private datosService: DatosService) {
+    let array = []
   }
 
   createChart(fecha) {
@@ -64,7 +66,8 @@ export class GraphicComponent implements OnInit {
         }
       });
     });
-    console.log(this.newData)
+
+
     return this.newData;
   }
 
@@ -99,8 +102,32 @@ export class GraphicComponent implements OnInit {
             min: 0
             },
             tooltip: {
-                headerFormat: '<b>{series.name}</b><br>',
-                pointFormat: '{point.x:%e. %b}: {point.y:.2f} pesos'
+              // headerFormat: '<b>{series.name}</b><br>',
+              formatter: function () {
+                let x = this.point.x,
+                    y = this.y,
+                    divisa = this.point.series.name,
+                series = this.series,
+                each = Highcharts.each,
+                date = new Date(x),
+                anterior = null,
+                diff = null;
+                const MONTH_NAMES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+                ];
+                let day = date.getUTCDate();
+                let month =  MONTH_NAMES[date.getUTCMonth()];
+                let year = date.getUTCFullYear();
+                
+                each(series.data, function(p, i){
+                  if(p.x === x && series.data[i-1]) {
+                      anterior = series.data[i-1].y;
+                      diff = (y - anterior);
+                  }
+                });
+
+                return "Divisa :" + divisa + "<br>" + day + "-" + month + "-" + year + ": " + y + "<br>diferencia: " + diff;
+              }
             },
 
             plotOptions: {
@@ -120,18 +147,44 @@ export class GraphicComponent implements OnInit {
       this.chart = chart(this.chartTarget.nativeElement, options);
     }
 
-    addSeries(divisa){
+    addSeries(divisas) {
+      this.removeAllSeries();
+      for (var i = divisas.length - 1; i >= 0; i--) {
+        console.log(divisas[i]);
+        this.addDivisa(divisas[i]);
+      }
+    }
+
+    addDivisa(divisa) {
       let data = [];
-      console.log('Agregando Serie!!!', this.hayData);
 
       if (this.hayData) {
+        console.log(this.newData.datos);
         data = this.newData.datos[divisa].map(item => {
           let fecha = this.formatFechaGraphic(item.fecha);
           let valor = this.transformValue(item.valor);
           return [fecha, parseFloat(valor)];
         });
-        console.log('Agregando Serie!!!', data);
       }
+
+
+      this.addDataSerie({
+        name:divisa,
+        data:data
+      });
+    }
+
+    addDataSerie(info) {
+      let divisa = info.name;
+      let data = info.data.sort(function(a, b) {
+        if (a[0] > b[0]) {
+          return 1;
+        }
+        if (a[0] < b[0]) {
+          return -1;
+        }
+        return 0;
+      });
 
       this.chart.addSeries({
         name:divisa,
@@ -139,13 +192,9 @@ export class GraphicComponent implements OnInit {
       });
     }
 
-    addDataSerie(data) {
-      this.chart.addSeries(data);
-    }
-
     removeAllSeries() {
       while(this.chart.series.length > 0)
-          this.chart.series[0].remove(true);
+        this.chart.series[0].remove(true);
       return true;
     }
 
@@ -161,7 +210,10 @@ export class GraphicComponent implements OnInit {
 
       this.removeAllSeries();
       for (var i = data.length - 1; i >= 0; i--) {
-        this.addDataSerie(data[i]);
+        this.addDataSerie({
+          name:data[i].name,
+          data:data[i].data
+        });
       }
     }
 
@@ -171,9 +223,7 @@ export class GraphicComponent implements OnInit {
     }
 
     transformValue(valor) {
-      console.log(valor)
       let valorModificado = valor.split('.').join('');
-      console.log(valorModificado)
       return valorModificado;
     }
 }
