@@ -2,32 +2,19 @@
   <div class="row filter">
     <div class="col-md-12 fondo2 text-center">
       <p>Selecciona</p>
-      <!-- <ngb-accordion activeIds="config-panel-one" class="filter">
-        <ngb-panel title="Divisas" id="config-panel-one">
-          <ng-template ngbPanelContent class="filter2">
-            <app-filter-fecha></app-filter-fecha>
-          </ng-template>
-        </ngb-panel>
-
-        <ngb-panel title="Fecha">
-          <ng-template ngbPanelContent class="filter2">
-            <app-filter-divisas (onAdd)="onAdd($event)"></app-filter-divisas>
-          </ng-template>
-        </ngb-panel>
-      </ngb-accordion> -->
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             Divisas
           </mat-expansion-panel-header>
-            <app-filter-fecha></app-filter-fecha>
+            <app-filter-divisas (onAdd)="onAdd($event)"></app-filter-divisas>
         </mat-expansion-panel>
 
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             Fecha
           </mat-expansion-panel-header>
-            <app-filter-divisas (onAdd)="onAdd($event)"></app-filter-divisas>
+            <app-filter-fecha></app-filter-fecha>
         </mat-expansion-panel>
       </mat-accordion> 
       <button type="button" (click)= "onGenerarGrafico()" class="btn btn-primary text-center">Generar Grafico</button> 

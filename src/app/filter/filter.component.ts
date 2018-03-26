@@ -1,8 +1,6 @@
 import { Fecha } from "./../fecha";
 import { Component, OnInit, Output, EventEmitter, ViewChild, Inject } from '@angular/core';
-// import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
-/*import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';*/
 import { FilterFechaComponent } from '../filter-fecha/filter-fecha.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 
@@ -10,7 +8,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
   selector: 'app-filter',
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css'],
-  // providers: [NgbAccordionConfig] 
 })
 export class FilterComponent implements OnInit {
   panelOpenState: boolean = false;
@@ -18,9 +15,7 @@ export class FilterComponent implements OnInit {
   @Output() onfecha = new EventEmitter<any>();
   @ViewChild(FilterFechaComponent) child:FilterFechaComponent;
 
-  constructor(/*config: NgbAccordionConfig*/) {
-    /*config.closeOthers = true;
-    config.type = 'info';*/  
+  constructor() {  
   }
 
   ngOnInit() {
@@ -35,7 +30,4 @@ export class FilterComponent implements OnInit {
     let fecha = this.child.getFecha();
     this.onfecha.emit(fecha)
   }
-
-
-
 }

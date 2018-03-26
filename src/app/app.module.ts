@@ -12,8 +12,7 @@ import { GraphicComponent } from './graphic/graphic.component';
 import { FilterComponent } from './filter/filter.component';
 import { FilterDivisasComponent } from './filter-divisas/filter-divisas.component';
 import { FilterFechaComponent } from './filter-fecha/filter-fecha.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
-/*import {  BootstrapComponent } from './bootstrap';*/
+
 
 // componentes externos
 import { MatDialogModule } from '@angular/material/dialog';
@@ -34,7 +33,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgbModule.forRoot(),
     BrowserAnimationsModule,
     MatDialogModule,
     MatFormFieldModule,
