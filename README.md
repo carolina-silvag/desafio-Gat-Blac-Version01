@@ -10,8 +10,10 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
      - Al presionar un botón buscar se debe pintar en un gráfico los valores  en peso de las divisas, obteniendo  el valor  de las Apis de Gat-Blac y pasar a paso 2.
 -  PASO 2: 
    ## Gráfico con variación de valor:
-     - Se debe visualizarun gráfico que muestre  el valor  de la divisa y su fluctuación en el rango de fechas que ingreso el usuario.-Al posicionar en una fecha 
-     – divisa se debe mostrar su variación deprecio con respecto al día anterior.
+     - Se debe visualizarun gráfico que muestre  el valor  de la divisa y su fluctuación en el rango de fechas que ingreso el usuario.
+     - Al posicionar en una fecha se debe mostrar su variación de precio con respecto al día anterior.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development server
