@@ -10,6 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
   styleUrls: ['./filter.component.css'],
 })
 export class FilterComponent implements OnInit {
+  
   panelOpenState: boolean = false;
   @Output() onAddDivisa = new EventEmitter<any>();
   @Output() onfecha = new EventEmitter<any>();

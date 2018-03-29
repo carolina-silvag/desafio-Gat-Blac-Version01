@@ -16,7 +16,7 @@ import { FilterFechaComponent } from './filter-fecha/filter-fecha.component';
 
 // componentes externos
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatFormFieldModule, MatInputModule, MatExpansionModule, MatListModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatExpansionModule, MatListModule, MatGridListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatExpansionModule,
     MatListModule,
+    MatGridListModule,
 
   ],
   providers: [

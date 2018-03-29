@@ -1,5 +1,7 @@
 # DesafioGatBlac
 
+![proyectofinal](https://user-images.githubusercontent.com/32287504/38073153-33aceaa4-3300-11e8-82f2-00f57796683e.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development server
