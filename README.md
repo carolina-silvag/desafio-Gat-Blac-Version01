@@ -15,19 +15,20 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
       - Al posicionar en una fecha se debe mostrar su variación de precio con respecto al día anterior.
 
 - ASPECTOS TÉCNICOS A CONSIDERAR: 
-      - Se debe usar frameworks y tecnologías  que utilicen javascript.  Ejemplo:  Express, Angularjs,  Total.js -Existe  libertad para utilizar librerías de apoyo, por ejemplo  para el manejo  de grillas  o gráficos.
-      - Se deben instalar todas  las dependenciasdel proyectocon NPM  usando los flags  --save o --save-dev-Un desarrollo  real requiere de una especificación o diseño previo, de modo que se valorará  la incorporación de un diagrama o documento de apoyo.
-      - En un desarrollo  real es muy importante  el manejo  de errores por lo que se valorará  la consideración de este punto.-Si bien el desafío es acotado, existe  la libertad de especificar elementos  no descritos que consideres relevantes  para el proyecto requerido.
+      -  Se debe usar frameworks y tecnologías  que utilicen javascript.  Ejemplo:  Express, Angularjs,  Total.js -Existe  libertad para utilizar librerías de apoyo, por ejemplo  para el manejo  de grillas  o gráficos.
+      -  Se deben instalar todas  las dependenciasdel proyectocon NPM  usando los flags  --save o --save-dev-Un desarrollo  real requiere de una especificación o diseño previo, de modo que se valorará  la incorporación de un diagrama o documento de apoyo.
+      -  En un desarrollo  real es muy importante  el manejo  de errores por lo que se valorará  la consideración de este punto.
+      -  Si bien el desafío es acotado, existe  la libertad de especificar elementos  no descritos que consideres relevantes  para el proyecto requerido.
 
 - MATERIAL  DISPONIBLE: 
        Se debe utilizarlas Apis de Gat-Blacpara obtener los datos.
-      - Para los valores  diarios del dólar, uf, euro y utm usar 
+      -  Para los valores  diarios del dólar, uf, euro y utm usar 
         - http://gat-blac.com/indicator/api/indicators-Para 
-      - obtener las otras divisas y sus respectivos  valores  usar
+      -  obtener las otras divisas y sus respectivos  valores  usar
         - http://gat-blac.com/indicator/api/exchangeRate-Ejemplo  
-      - para filtrar por fecha:
+      -  para filtrar por fecha:
         - http://gat-blac.com/indicator/api/exchangeRate?date=2017-12-12
-      -También  se puede usar la librería en del npm 
+      -  También  se puede usar la librería en del npm 
         - https://www.npmjs.com/package/node-gat-blac-ap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
