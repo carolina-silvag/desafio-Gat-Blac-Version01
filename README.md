@@ -14,13 +14,13 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
       - Se debe visualizarun gráfico que muestre  el valor  de la divisa y su fluctuación en el rango de fechas que ingreso el usuario.
       - Al posicionar en una fecha se debe mostrar su variación de precio con respecto al día anterior.
 
-- ASPECTOS TÉCNICOS A CONSIDERAR: 
+### ASPECTOS TÉCNICOS A CONSIDERAR: 
       -  Se debe usar frameworks y tecnologías  que utilicen javascript.  Ejemplo:  Express, Angularjs,  Total.js -Existe  libertad para utilizar librerías de apoyo, por ejemplo  para el manejo  de grillas  o gráficos.
       -  Se deben instalar todas  las dependenciasdel proyectocon NPM  usando los flags  --save o --save-dev-Un desarrollo  real requiere de una especificación o diseño previo, de modo que se valorará  la incorporación de un diagrama o documento de apoyo.
       -  En un desarrollo  real es muy importante  el manejo  de errores por lo que se valorará  la consideración de este punto.
       -  Si bien el desafío es acotado, existe  la libertad de especificar elementos  no descritos que consideres relevantes  para el proyecto requerido.
 
-- MATERIAL  DISPONIBLE: 
+### MATERIAL  DISPONIBLE: 
        Se debe utilizarlas Apis de Gat-Blacpara obtener los datos.
       -  Para los valores  diarios del dólar, uf, euro y utm usar 
         - http://gat-blac.com/indicator/api/indicators-Para 
