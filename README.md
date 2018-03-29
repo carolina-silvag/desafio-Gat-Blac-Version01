@@ -22,14 +22,10 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
 
 ### MATERIAL  DISPONIBLE: 
        Se debe utilizarlas Apis de Gat-Blacpara obtener los datos.
-      -  Para los valores  diarios del dólar, uf, euro y utm usar 
-        - http://gat-blac.com/indicator/api/indicators-Para 
-      -  obtener las otras divisas y sus respectivos  valores  usar
-        - http://gat-blac.com/indicator/api/exchangeRate-Ejemplo  
-      -  para filtrar por fecha:
-        - http://gat-blac.com/indicator/api/exchangeRate?date=2017-12-12
-      -  También  se puede usar la librería en del npm 
-        - https://www.npmjs.com/package/node-gat-blac-ap
+      -  Para los valores  diarios del dólar, uf, euro y utm usar http://gat-blac.com/indicator/api/indicators-Para 
+      -  obtener las otras divisas y sus respectivos  valores  usar http://gat-blac.com/indicator/api/exchangeRate-Ejemplo  
+      -  para filtrar por fecha: http://gat-blac.com/indicator/api/exchangeRate?date=2017-12-12
+      -  También  se puede usar la librería en del npm https://www.npmjs.com/package/node-gat-blac-ap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
