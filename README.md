@@ -6,7 +6,8 @@
 Para la evaluación  del desafío se debe realizar una aplicación web que permita a los usuarios conocerel valor  en pesos chilenos de las principales divisasy visualizarlas mediante  un gráfico. La consulta  se debe realizar seleccionando las divisas  y el rango de fechas.A continuación, los detalles  del funcionamiento: 
 - PASO 1: 
   ### Selección de filtros: 
-      - Se debe mostrar una lista que muestre  todas las divisas  disponibles, donde se puede seleccionarmás de unadivisa.-Se debe mostrar filtros de fecha. (fecha desde y fecha hasta)
+      - Se debe mostrar una lista que muestre  todas las divisas  disponibles, donde se puede seleccionarmás de una divisa.
+      - Se debe mostrar filtros de fecha. (fecha desde y fecha hasta)
       - Al presionar un botón buscar se debe pintar en un gráfico los valores  en peso de las divisas, obteniendo  el valor  de las Apis de Gat-Blac y pasar a paso 2.
 - PASO 2: 
    ### Gráfico con variación de valor:
@@ -19,7 +20,7 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
       - En un desarrollo  real es muy importante  el manejo  de errores por lo que se valorará  la consideración de este punto.-Si bien el desafío es acotado, existe  la libertad de especificar elementos  no descritos que consideres relevantes  para el proyecto requerido.
 
 - MATERIAL  DISPONIBLE: 
-      - Se debe utilizarlas Apis de Gat-Blacpara obtener los datos.
+       Se debe utilizarlas Apis de Gat-Blacpara obtener los datos.
       - Para los valores  diarios del dólar, uf, euro y utm usar 
         - http://gat-blac.com/indicator/api/indicators-Para 
       - obtener las otras divisas y sus respectivos  valores  usar
