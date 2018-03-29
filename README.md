@@ -5,13 +5,13 @@
 ## Especificación  del desafío
 Para la evaluación  del desafío se debe realizar una aplicación web que permita a los usuarios conocerel valor  en pesos chilenos de las principales divisasy visualizarlas mediante  un gráfico. La consulta  se debe realizar seleccionando las divisas  y el rango de fechas.A continuación, los detalles  del funcionamiento: 
 - PASO 1: 
-  Selección de filtros: 
-     ##-Se debe mostrar una lista que muestre  todas las divisas  disponibles, donde se puede seleccionarmás de unadivisa.-Se debe mostrar filtros de fecha. (fecha desde y fecha hasta)
-     ##-Al presionar un botón buscar se debe pintar en un gráfico los valores  en peso de las divisas, obteniendo  el valor  de las Apis de Gat-Blac y pasar a paso 2.
+  ## Selección de filtros: 
+     - Se debe mostrar una lista que muestre  todas las divisas  disponibles, donde se puede seleccionarmás de unadivisa.-Se debe mostrar filtros de fecha. (fecha desde y fecha hasta)
+     - Al presionar un botón buscar se debe pintar en un gráfico los valores  en peso de las divisas, obteniendo  el valor  de las Apis de Gat-Blac y pasar a paso 2.
 -  PASO 2: 
-   Gráfico con variación de valor:
-     ##-Se debe visualizarun gráfico que muestre  el valor  de la divisa y su fluctuación en el rango de fechas que ingreso el usuario.-Al posicionar en una fecha 
-     ##–divisa se debe mostrar su variación deprecio con respecto al día anterior.
+   ## Gráfico con variación de valor:
+     - Se debe visualizarun gráfico que muestre  el valor  de la divisa y su fluctuación en el rango de fechas que ingreso el usuario.-Al posicionar en una fecha 
+     – divisa se debe mostrar su variación deprecio con respecto al día anterior.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development server
