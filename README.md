@@ -4,7 +4,7 @@
 
 ## **```Dependencias y herramientas```**
 
-![Javascript](https://img.shields.io/badge/javascript-ecma6-008080.svg)
+![Angular](https://img.shields.io/badge/javascript-ecma6-008080.svg)
 ![React](https://img.shields.io/badge/react-v16.2.0-green.svg)
 ![PropTypes](https://img.shields.io/badge/proptypes-v15.6.1-yellowgreen.svg)
 ![ReactRouter](https://img.shields.io/badge/reactrouter-v4.2.0-yellow.svg)
@@ -15,6 +15,7 @@
 ![Reactstrap](https://img.shields.io/badge/reactstrap-v5.0.0-301472.svg)
 ![Firebase](https://img.shields.io/badge/bootstrap-v4.11.0-034b86.svg)
 
+## Wireframe
 ![Wireframe](src/assets/img/Wireframe.jpg)
 
 ## Especificación  del desafío
