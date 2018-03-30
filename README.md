@@ -2,6 +2,21 @@
 
 ![proyectofinal](https://user-images.githubusercontent.com/32287504/38073153-33aceaa4-3300-11e8-82f2-00f57796683e.png)
 
+## **```Dependencias y herramientas```**
+
+![Javascript](https://img.shields.io/badge/javascript-ecma6-008080.svg)
+![React](https://img.shields.io/badge/react-v16.2.0-green.svg)
+![PropTypes](https://img.shields.io/badge/proptypes-v15.6.1-yellowgreen.svg)
+![ReactRouter](https://img.shields.io/badge/reactrouter-v4.2.0-yellow.svg)
+![NodeJS](https://img.shields.io/badge/nodejs-v8.9.0-orange.svg)
+![NasaAPI](https://img.shields.io/badge/nasa-api-red.svg)
+![NewsAPI](https://img.shields.io/badge/news-api-ff69b4.svg)
+![Bootstrap](https://img.shields.io/badge/bootstrap-v4.0.0-70108d.svg)
+![Reactstrap](https://img.shields.io/badge/reactstrap-v5.0.0-301472.svg)
+![Firebase](https://img.shields.io/badge/bootstrap-v4.11.0-034b86.svg)
+
+![Wireframe](src/assets/img/Wireframe.jpg)
+
 ## Especificación  del desafío
 Para la evaluación  del desafío se debe realizar una aplicación web que permita a los usuarios conocerel valor  en pesos chilenos de las principales divisasy visualizarlas mediante  un gráfico. La consulta  se debe realizar seleccionando las divisas  y el rango de fechas.A continuación, los detalles  del funcionamiento: 
 - PASO 1: 
@@ -28,6 +43,9 @@ Para la evaluación  del desafío se debe realizar una aplicación web que permi
         - http://gat-blac.com/indicator/api/exchangeRate?date=2017-12-12
       -También  se puede usar la librería en del npm 
         - https://www.npmjs.com/package/node-gat-blac-ap
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
