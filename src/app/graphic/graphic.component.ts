@@ -150,7 +150,6 @@ export class GraphicComponent implements OnInit {
     addSeries(divisas) {
       this.removeAllSeries();
       for (var i = divisas.length - 1; i >= 0; i--) {
-        console.log(divisas[i]);
         this.addDivisa(divisas[i]);
       }
     }
@@ -159,7 +158,6 @@ export class GraphicComponent implements OnInit {
       let data = [];
 
       if (this.hayData) {
-        console.log(this.newData.datos);
         data = this.newData.datos[divisa].map(item => {
           let fecha = this.formatFechaGraphic(item.fecha);
           let valor = this.transformValue(item.valor);

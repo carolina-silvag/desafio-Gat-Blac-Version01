@@ -21,17 +21,11 @@ export class FilterFechaComponent implements OnInit {
 
 
   getFecha() {
-    console.log('entre al click filter fecha')
-    
-      let newFecha = new Fecha();
-      newFecha.desde = this.fecha.desde;
-      newFecha.hasta = this.fecha.hasta;
-      newFecha.fechas = this.allFechas(this.fecha.desde, this.fecha.hasta)
-      console.log(newFecha, 'antes de enviar')
-      // this.submit.emit(newFecha);
-      /*this.fechaForm.reset();
-      console.log(this.fecha, 'por fin')*/
-      return newFecha
+    let newFecha = new Fecha();
+    newFecha.desde = this.fecha.desde;
+    newFecha.hasta = this.fecha.hasta;
+    newFecha.fechas = this.allFechas(this.fecha.desde, this.fecha.hasta)
+    return newFecha
   }
 
   allFechas(desde, hasta) {
@@ -46,8 +40,6 @@ export class FilterFechaComponent implements OnInit {
       actual.setDate(actual.getDate() + i);
       fechas.push(this.formatFechaApi(actual));
     }
-
-    console.log(fechas, diffDay, desde, hasta);
     return fechas;
   }
 

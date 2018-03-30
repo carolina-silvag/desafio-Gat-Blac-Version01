@@ -23,7 +23,6 @@ export class FilterComponent implements OnInit {
   }
 
   onAdd(divisa) {
-    console.log("divisa en app-filter", divisa)
     this.onAddDivisa.emit(divisa);
   }
 

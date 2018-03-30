@@ -30,7 +30,6 @@ export class FilterDivisasComponent implements OnInit {
   onChangeDivisas(list){
     this.selectedDivisas = list.selectedOptions.selected.map(item => item.value);
     this.onAdd.emit(this.selectedDivisas);
-    console.log(this.selectedDivisas, list.selectedOptions.selected);
   }
 
   ngOnInit() {
